@@ -17,6 +17,8 @@ const popularFormReservaVeiculo = (idVeiculo, idReserva) => {
     if (idReserva === undefined) {
         idReserva = 'error'
         verificaReserva = null
+        document.getElementById('title-reserva').innerHTML = "Reserva do Veículo"
+        document.getElementById('btn-submit').innerHTML = "Reservar"
     }
 
     let bodyRequest = JSON.stringify({
